@@ -19,6 +19,8 @@ with open(test_matrix_file, 'rb') as fd:
 labels = matrix[:, 1].toarray()
 x = matrix[:, 2:]
 
+accuracy = (model.predict(x) == labels).mean()
+
 predictions_by_class = model.predict_proba(x)
 predictions = predictions_by_class[:,1]
 
@@ -28,4 +30,5 @@ auc = metrics.auc(recall, precision)
 #print('AUC={}'.format(metrics.auc(recall, precision)))
 with open(metrics_file, 'w') as fd:
     fd.write('AUC: {:4f}\n'.format(auc))
+    fd.write('accuracy: {:4f}\n'.format(accuracy))
 
