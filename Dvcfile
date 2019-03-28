@@ -1,6 +1,6 @@
 cmd: python code/evaluate.py
 deps:
-- md5: 5d3cddbd3a091c80fc120610e735fa23
+- md5: 2162dc0d6677078d90a566c53c55a680
   path: data/model.p
 - md5: 22de9d1e3623388e9f95d7132a103ce2
   path: data/matrix-test.p
@@ -8,10 +8,10 @@ deps:
   path: code/evaluate.py
 - md5: 17f591c0c65a450fd53b34ba0ac6df7b
   path: code/conf.py
-md5: c8f13843641f9031634df8fe05ef3350
+md5: ba580d438e74faf1dd69708cbde83b8e
 outs:
 - cache: false
-  md5: 2cad992a50a1421aac5434d9f03407e6
+  md5: 1b95eedca54000fc88901f4b5c484647
   metric: true
   path: data/eval.txt
 wdir: .
